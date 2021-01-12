@@ -109,15 +109,15 @@
   }
 
   //Click event for subscribe push
-  fabPushElement.addEventListener('click', function () {
-    var isSubscribed = (fabPushElement.dataset.checked === 'true');
-    if (isSubscribed) {
-      unsubscribePush();
-    }
-    else {
-      subscribePush();
-    }
-  });
+  // fabPushElement.addEventListener('click', function () {
+  //   var isSubscribed = (fabPushElement.dataset.checked === 'true');
+  //   if (isSubscribed) {
+  //     unsubscribePush();
+  //   }
+  //   else {
+  //     subscribePush();
+  //   }
+  // });
 
   //Form data with info to send to server
   function sendPushNotification() {
