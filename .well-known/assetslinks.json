@@ -5,9 +5,9 @@
         ],
         "target": {
             "namespace": "android_app",
-            "package_name": "top.loookit.twa",
+            "package_name": "com.pkutech_jp.smh.twa",
             "sha256_cert_fingerprints": [
-                "54:9E:8E:11:AF:21:DF:5B:BB:E1:95:17:9B:BC:70:51:97:9C:21:33:80:92:5A:FC:B2:E2:B4:BD:87:79:71:7D"
+                "5C:18:18:46:8A:83:45:B5:16:5E:65:47:E5:F8:1B:28:A9:54:15:A2:67:5C:9C:39:DC:7F:0C:FA:A1:0A:C8:6E"
             ]
         }
     }
