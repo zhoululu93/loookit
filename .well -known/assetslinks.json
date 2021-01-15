@@ -1,0 +1,14 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "top.loookit.twa",
+            "sha256_cert_fingerprints": [
+                "54:9E:8E:11:AF:21:DF:5B:BB:E1:95:17:9B:BC:70:51:97:9C:21:33:80:92:5A:FC:B2:E2:B4:BD:87:79:71:7D"
+            ]
+        }
+    }
+]
