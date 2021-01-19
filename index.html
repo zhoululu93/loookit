@@ -110,6 +110,7 @@
 
 	<!-- My Google Analytics Report -->
 	<script>
+		  
 		(function (i, s, o, g, r, a, m) {
 			i['GoogleAnalyticsObject'] = r;
 			(i[r] =
@@ -133,6 +134,31 @@
 
 		ga('create', 'UA-92627241-1', 'auto');
 		ga('send', 'pageview');
+		
+		 var timeOutEvent;
+        
+        $(document).on("touchstart","body img",function(e){           
+                    var that = this;
+                    timeOutEvent = setTimeout("longPress()",500);//500设置时间
+                    picUrl = $(that).attr('src');                        
+                     e.preventDefault(); 
+        })
+        $(document).on("touchmove","body img",function(e){
+            clearTimeout(timeOutEvent); 
+            timeOutEvent = 0;
+        })
+        $(document).on("touchend","body img",function(e){
+            clearTimeout(timeOutEvent);
+            if(timeOutEvent!=0){ 
+                alert("你这是点击，不是长按"); 
+            } 
+            return false;
+        })
+        
+        function longPress(){ 
+            timeOutEvent = 0; 
+            alert("长按事件触发发");    
+        } 
 	</script>
 </body>
 
